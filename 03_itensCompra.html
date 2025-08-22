@@ -12,7 +12,7 @@
 
     //ENTRADA
 
-    const fruta1 = prompt("informe a primeira fruta");
+    const fruta1 = prompt("informe a primeira fruta"). trim()
     const fruta2 = prompt("informe a segunda fruta");
     const fruta3 = prompt("informe a terceira fruta");
 
@@ -22,16 +22,13 @@
 
     //PROCESSAMENTO
 
- fruta = [];
-bebida = [];
+    fruta = [fruta1, fruta2, fruta3];
+    bebida = [bebida1, bebida2, bebida3];
 
-frutas = (fruta1, fruta2, fruta3);
-bebidas = (bebida1, bebida2, bebida3);
 
 
     //SAÍDA
-
-document.write(frutas)
-document.write(bebidas)
+    document.write(`As frutas a serem compradas são: ${fruta.join(", ")}`);
+    document.write(`As bebidas a serem compradas são: ${bebida.join(", ")}`);
 
 </script>
