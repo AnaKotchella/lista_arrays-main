@@ -10,9 +10,20 @@
 
     //ENTRADA
 
+     let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosAntiga = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    const adicao = prompt(`Qual carro deseja adcionar à lista: ${carrosSUV.join(", ")}`);
 
     //PROCESSAMENTO
-
+    const posicao = carrosSUV.push(adicao);
+    if (posicao > -1) {
+        carrosSUV.push(posicao);
+        alert(`A lista antiga é: ${carrosAntiga.join(", ")}`);
+        alert(`A lista nova é: ${carrosSUV.join(", ")}`);
+    }
+    else {
+        alert(`Carro não encontrado!`);
+    }
 
     //SAÍDA
 
